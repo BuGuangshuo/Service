@@ -51,6 +51,7 @@ var getProcessRouter = require("./routes/processGroup/getProcess");
 
 var targetListBy = require("./routes/target/targetListBy");
 var saveTarget = require("./routes/target/saveTarget");
+var deleteTarget = require("./routes/target/deleteTarget");
 
 var users = require("./routes/users");
 
@@ -91,6 +92,8 @@ app.use("/v1/process/get", getProcessRouter);
 
 app.use("/v1/target/listBy", targetListBy);
 app.use("/v1/target/save", saveTarget);
+app.use("/v1/target/delete", deleteTarget);
+
 app.use("/v1/users", users);
 app.use("/v1/register", regRouter);
 

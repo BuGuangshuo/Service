@@ -9,7 +9,8 @@ router.post("/", function (req, res) {
     amountVal,
     dateValue,
     timeType,
-    editType,
+    groupId,
+    targetType,
     createUserName,
   } = req.body;
   // 保存到团队数据库
@@ -20,7 +21,8 @@ router.post("/", function (req, res) {
       dateValue,
       currentCount: 0,
       timeType,
-      editType,
+      targetType,
+      groupId,
       createUserName,
       createTime: Date.now(),
       updateTime: Date.now(),
