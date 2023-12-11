@@ -42,7 +42,6 @@ router.post("/", async function (req, res) {
 
   const list = await Target.find(filter).sort("updateTime");
 
-  console.log(filter);
   if (list) {
     res.json({
       code: 200,
